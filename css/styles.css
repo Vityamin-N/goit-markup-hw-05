@@ -598,6 +598,14 @@ ul {
     text-align: center;
 }
 
+.close-icon{
+    position: absolute;
+    left: 32%;
+    right: 16.67%;
+    top: 30%;
+    bottom: 22.22%;
+}
+
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
