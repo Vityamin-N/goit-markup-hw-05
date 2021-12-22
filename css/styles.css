@@ -169,6 +169,7 @@ ul {
 .header-contacts-link {
     color: var(--primary-text-color);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-icon {
@@ -216,13 +217,15 @@ ul {
     border: 4px transparent;
     color: var(--white-color);
     background-color: var(--background-button);
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -397,6 +400,8 @@ ul {
     justify-content: center;
     align-items: center;
     color: var(--icon-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -438,10 +443,17 @@ ul {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:last-child {
     margin-right: 0;
+}
+
+.clients-icon{
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -539,6 +551,7 @@ ul {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks-link:hover,
@@ -636,6 +649,8 @@ ul {
     border-color: transparent;
     min-height: 38px;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item:last-child {
@@ -664,8 +679,16 @@ ul {
     border-top: 0px;
 }
 
+.projects-thumb{
+    position: relative;
+    overflow: hidden;
+}
+
 .projects-card:hover .projects-modal{
     opacity: 1;
+}
+
+.projects-card:hover .projects-modal {
     transform: translateY(0%);
 }
 
